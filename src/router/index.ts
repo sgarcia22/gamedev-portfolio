@@ -10,11 +10,11 @@ const routes: Array<RouteConfig> = [
     name: 'Root',
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
-  {
-    path: '/resume',
-    name: 'Resume',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Resume.vue')
-  },
+  // {
+  //   path: '/resume',
+  //   name: 'Resume',
+  //   component: () => import(/* webpackChunkName: "about" */ '../views/Resume.vue')
+  // },
   {
     path: '/game-projects',
     name: 'Game Projects',
@@ -31,14 +31,29 @@ const routes: Array<RouteConfig> = [
     component: () => import(/* webpackChunkName: "about" */ '../views/Contact.vue')
   },
   {
-    path: '/404',
-    name: 'NotFound',
-    component: () => import(/* webpackChunkName: "about" */ '../views/404.vue')
+    path: '/privacy',
+    name: 'PrivacyPolicy',
+    component: () => import(/* webpackChunkName: "about" */ '../views/PrivacyPolicy.vue')
+  },
+  // {
+  //   path: '/tos',
+  //   name: 'TermsOfService',
+  //   component: () => import(/* webpackChunkName: "about" */ '../views/TermsOfService.vue')
+  // },
+  {
+    path: '/googletos',
+    name: 'GoogleStoreTerms',
+    component: () => import(/* webpackChunkName: "about" */ '../views/GoogleStoreTerms.vue')
   },
   {
     path: '*',
     redirect: '/404'
-  }
+  },
+  {
+    path: '/404',
+    name: 'NotFound',
+    component: () => import(/* webpackChunkName: "about" */ '../views/404.vue')
+  },
 ]
 
 const router = new VueRouter({

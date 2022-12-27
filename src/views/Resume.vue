@@ -1,15 +1,15 @@
 <template>
   <div>
-    <h1>Resume</h1>
+    <!-- <h1>Resume</h1> -->
 
-    <div class="paragraph">
-      I'm <strong>John Matrix</strong>, a former Delta Force operative with lots of experience, lots of training and huge muscles.
+    <!-- <div class="paragraph">
+      I'm <strong>Sam</strong>, a YouTube content creator and game developer.
       <br />After graduating from kindergarten, I've been enrolled in the army for 25 years, where I learned to destroy things in an amazing number of ways.
       <br />I joined the Delta Force because I thought it was Greek lessons, but I quickly adapted to this unexpected environment and became a key element.
       <br />I love teamwork, but I can also go in solo depending on the mission requirements.
       <br />
       <br />Right now I'm trying to find inner peace after I've read some personal development books. I'm looking for a monk job so if you have any opportunity feel free to 
-      <router-link to="/contact">contact me</router-link>.
+      <router-link to="/contact">co ntact me</router-link>.
       <br />
       <br />Besides war, I'm passionate about firearms, martial arts, explosions, push-ups and flowers.
 
@@ -101,10 +101,9 @@
         <div>Especially the big ones, with the trunk and leaves.</div>
 
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
-
 <script lang="ts">
 import Vue from "vue";
 import SkillRate from "@/components/SkillRate.vue";

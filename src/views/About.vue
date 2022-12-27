@@ -1,48 +1,85 @@
 <template>
-  <div style="margin-bottom: 80px;">
-    <h1>Hello!</h1>
+  <div>
+      <h1>hey! 👋</h1>
 
-    <div class="paragraph">
+  <div class="about">
+    <div class="paragraph" style="margin-bottom: 60px;">
       <div>
-        I'm <strong>John Matrix</strong>, a former Delta Force operative, now a hobbyist lumberjack.<br/>
-        I spend my days living alone with my daughter Jenny, and cutting trees and carrying trunks around to keep in shape.
+        <div>
+          I'm <strong>Sam</strong> 💖, a <a href="https://youtube.com/@samyam">YouTube content creator and</a> game developer.
+          I graduated with a Computer Science degree, went to work in industry for a year, then quit to follow my passions :)
+        </div>
+
+        <div style="margin-top: 20px;">I've worked on  <router-link to="/game-projects">cool games</router-link>, on <router-link to="/other-projects">weird projects</router-link>, and took part in <router-link to="/resume">a few other things</router-link> as well.</div> 
+        
+        <div style="margin-top: 20px;">I have over 30K subscribers on YouTube and have been sponsored in my videos by Unity, LootLocker, Machinations, Mental Checkpoint, and more.</div>
+
+        <div style="margin-top: 20px;">You can reach me at <a href="mailto:sam@samyam.dev">sam@samyam.dev</a> or <router-link to="/contact">through here</router-link>.</div>
       </div>
 
-      <div style="margin-top: 20px;">I've worked on  <router-link to="/game-projects">stuff</router-link>, on <router-link to="/other-projects">other stuff</router-link>, and took part in <router-link to="/resume">a few things</router-link> as well.</div>
-
-      <div style="margin-top: 40px;">I'm <strong>currently looking for a job</strong> as a monk, like my good friend John Rambo did a few years back. You can reach me at <a href="mailto:johnmatrix@deltaforce.us">johnmatrix@deltaforce.us</a> or <router-link to="/contact">through here</router-link>.</div>
     </div>
-
     <div class="photo">
-      <img src="img/avatar.png" alt="Avatar of John" /> 
+      <img width="1000" src="img/profile.png" alt="Avatar of John" /> 
     </div>
 
     <div style="clear:both"></div>
-
+  </div>
   </div>
 </template>
 
 <style scoped>
+
+.about {
+  margin-bottom: 100px;
+  display: flex;
+  align-items: flex-start;
+}
+
 .paragraph {
+  width:60%;
   max-width: 700px;
   margin-bottom: 20px;
 }
 
 .photo {
-  margin-top: 50px;
+  width:40%;
+  /* width: 150%; */
+  margin-top: -40px;
   text-align: center;
 }
 
-@media only screen and (min-width: 620px){
-  .paragraph {
-    float: left;
+@media only screen and (max-width: 499px) {
+  .photo {
+    align-content: center;
   }
 
-  .photo {
-    float: left;
-    padding: 10px;
-    padding-left: 80px;
+  .photo img {
+    width: 100%;
+    /* visibility: hidden; */
+  }
+
+  .about {
+    display: block;
+    text-align: center;
+    left: 50%;
+    transform: translate(20%, 0);
+  }
+
+  h1 {
+    margin-left: 40px;
+    margin-top: 20px;
   }
 }
 
+@media only screen and (min-width: 500px) and (max-width: 999px) {
+  .photo img {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .photo img {
+    width: 90%;
+  }
+}
 </style>
