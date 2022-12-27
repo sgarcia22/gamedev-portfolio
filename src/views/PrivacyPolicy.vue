@@ -3,7 +3,7 @@
       <h1>Privacy Policy</h1>
   
        <div class="paragraph">
-        This website uses Plausible Analytics and Plausible Analytics for access analysis. Google Analytics uses cookies to collect data, but does not identify individuals. You can opt out of tracking by Google Analytics by disabling cookies. For more information, please see the <a href="https://plausible.io/terms">Plausible Analytics Policy and Terms of Use.</a>
+        This website uses Plausible Analytics for access analysis. For more information, please see the <a href="https://plausible.io/terms">Plausible Analytics Policy and Terms of Use.</a>
         </div>
       </div>
   </template>
