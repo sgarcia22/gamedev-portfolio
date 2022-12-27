@@ -46,6 +46,11 @@ const routes: Array<RouteConfig> = [
     component: () => import(/* webpackChunkName: "about" */ '../views/GoogleStoreTerms.vue')
   },
   {
+    path: '/crazydrivertos',
+    name: 'CrazyDriverGoogleStoreTerms',
+    component: () => import(/* webpackChunkName: "about" */ '../views/CrazyDriverGoogleStoreTerms.vue')
+  },
+  {
     path: '*',
     redirect: '/404'
   },
